@@ -1,0 +1,265 @@
+@font-face {
+	font-family: 'RSU-regular-th';
+	src: url('../fonts/rsufont/RSU-regular-th.eot');
+	src: url('../fonts/rsufont/RSU-regular-th.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/rsufont/RSU-regular-th.woff') format('woff'),
+	url('../fonts/rsufont/RSU-regular-th.ttf') format('truetype'),
+	url('../fonts/rsufont/RSU-regular-th.svg#RSU-regular-th') format('svg');
+	font-weight: normal;font-style: normal;
+}
+
+
+body{
+	background-color: #F4F5F5;
+	font-family: RSU-regular-th, sans-serif;
+}
+
+/*  NAV BAR */
+
+.navbar-default { 
+	border-radius: 0;
+	background-color: #393939;
+
+}
+
+.navbar-default .navbar-text{
+	color:#ecf0f1;
+	font-size: 1.5em;
+}
+
+
+
+#school-name{
+	padding-left: 20px;
+}
+
+#global-time{
+	text-align: center;
+	width: 100px;
+}
+
+#global-mode{
+	text-align: center;
+	width: 200px;
+}
+
+/*  LEFT BAR */
+
+.left-side{
+	margin: 0 0px 20px 20px;
+}
+
+#status-bar{
+	color: #95a5a6;
+	text-align: center;
+	font-size: 1.1em;
+	background-color: white;
+}
+
+#status-bar .header{
+	background-color: #ecf0f1;
+	padding: 10px 0px;
+}
+
+#status-bar ul{
+	list-style: none;
+	padding: 5px 15px;
+}
+
+#status-bar ul li{
+	padding: 5px 0px 6px 0px;
+}
+
+.status-img{
+	margin-bottom: 3px;
+}
+
+img.offline {
+	opacity: 0.2;
+    filter: alpha(opacity=20); /* msie */
+}
+
+.offline-desc{
+	font-size: 0.7em;
+	color:#c0392b;
+}
+
+.online-desc{
+	font-size: 0.7em;
+	color: #18ad78;
+}
+
+#status-bar img{
+	text-align: center;
+	display: block;
+}
+
+#status-bar::before, #status-bar::after {
+	display: table;
+	content: "";
+}
+
+#pending-sync-amount{
+	margin-top: 10px;
+	background-color: white;
+	min-height: 30px;
+	color: #95a5a6;
+	text-align: center;
+	padding-top: 7px;
+	font-size: 1.1em;
+}
+
+
+/*  STAMP CONTENT */
+
+#stamp-content{
+	margin-left: 130px;
+	margin-right: 20px;
+}
+
+.stamp-row{
+	min-height: 150px;
+	margin-top: 15px;
+	font-size: 1.9em;
+	background-color: white;
+	vertical-align: text-top;
+}
+
+.student-image-wrapper{
+
+}
+
+img.student-image{
+	margin: 15px;
+	opacity: 0.85;
+    filter: alpha(opacity=85); /* msie */
+    width: 90px;
+	height: 120px;
+}
+
+.field-label{
+	color:#34495e;
+}
+
+.student-info{
+	padding-top: 15px;
+	color: #2980b9;
+	float: left;
+}
+
+.info-line{
+	padding-top: 5px;
+}
+
+.student-code,.student-classroom{
+	font-size: 0.75em;
+}
+
+.stamp-time{
+	background-color: #f1c40f;
+	width: 150px;
+	min-height: 150px;
+	text-align: center;
+}
+.time{
+	line-height: 150px;
+	font-size: 1.7em;
+}
+
+.mode-label{
+	margin-right: 300px;
+}
+
+/* Modify Modal */
+.modal{
+	top: 30%;
+}
+
+.modal-content{
+	background-color: #e74c3c;
+	border: 0px;
+	
+}
+
+.modal-body p{
+	text-align: center;
+	color:white;
+	font-size: 2em;
+	line-height: normal;
+	margin: 30px;
+}
+
+.modal-backdrop {
+  background-color: white;
+}
+.modal-backdrop.in {
+  opacity: 0.45;
+  filter: alpha(opacity=55);
+}
+
+/*
+.modal.fade {
+  -webkit-transition: opacity .3s linear, top .3s ease-out;
+  -moz-transition: opacity .3s linear, top .3s ease-out;
+  -ms-transition: opacity .3s linear, top .3s ease-out;
+  -o-transition: opacity .3s linear, top .3s ease-out;
+  transition: opacity .3s linear, top .3s ease-out;
+}
+*/
+
+.modal.fade {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+}​
+
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+	margin-right: 0px;
+}
+
+/* 1024 Width */
+
+@media (max-width: 1024px) { 
+
+	.stamp-row{
+		min-height: 100px;
+		margin-top: 10px;
+		font-size: 1.5em;
+		background-color: white;
+		vertical-align: text-top;
+	}
+
+	img.student-image{
+		margin: 10px;
+		margin-right: 20px;
+		opacity: 0.85;
+	    filter: alpha(opacity=85); /* msie */
+	    width: 60px;
+		height: 80px;
+	}
+
+	.student-code,.student-classroom{
+		font-size: 0.65em;
+	}
+
+	.stamp-time{
+		width: 100px;
+		min-height: 100px;
+	}
+	.time{
+		line-height: 100px;
+		font-size: 1.4em;
+	}
+	.modal-dialog{
+		width: 60%;
+		
+	}
+	.modal-body p{
+		text-align: center;
+		font-size: 1.8em;
+		line-height: normal;
+		margin: 15px;
+	}
+}
