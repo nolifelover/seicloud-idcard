@@ -52,18 +52,19 @@ body{
 #status-bar{
 	color: #95a5a6;
 	text-align: center;
-	font-size: 1.1em;
-	background-color: white;
+	font-size: 1.2em;
+	background-color: #F5F3F3;
 }
 
 #status-bar .header{
-	background-color: #ecf0f1;
+	background-color: #EBE9E9;
 	padding: 10px 0px;
+	font-size: 1.5em;
 }
 
 #status-bar ul{
 	list-style: none;
-	padding: 5px 15px;
+	padding: 58px 100px;
 }
 
 #status-bar ul li{
